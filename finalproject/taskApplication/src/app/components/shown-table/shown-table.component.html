@@ -1,0 +1,18 @@
+<div class="  container mt-5 " style="width: 500px;margin: 20px auto; box-shadow: 50%;" >
+    <h1 class="mt-5">Customer table</h1>
+    <table class="table table-shadow  mt-3 table-striped" >
+        <thead>
+          <th>name</th>
+          <th>age</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let data of (CurrentMessage |async)">
+            <td >{{data.name}}</td>
+            <td >{{data.age}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <button class="btn btn-warning" routerLink="/customerdetail">Back</button>
+</div>
+ 
